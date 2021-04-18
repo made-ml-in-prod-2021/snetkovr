@@ -33,4 +33,4 @@ jobs:
           fi
       - name: Lint with pylint
         run: |
-          pylint
+          pylint .
