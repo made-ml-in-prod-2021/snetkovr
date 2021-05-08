@@ -20,3 +20,7 @@
 ## Predictions
 Получение предсказания для своих данных: <br>
 `python -m src.evaluate --model_path {model_path} --transformer_path {transformer_path} --to_predict {data_to_predict}`
+
+## EDA
+В проекте использовалось подобие авто-еда, пример вывода `reports/EDA` <br>
+`python scripts/auto_eda --path {path_to_dataset} --out {out_path} --target {target_column}`
