@@ -35,5 +35,5 @@ jobs:
         run: |
           pylint --exit-zero src
       - name: Test with pytest
-          run: |
-            python -m pytest --cov src/ tests/
+        run: |
+          python -m pytest --cov src/ tests/
