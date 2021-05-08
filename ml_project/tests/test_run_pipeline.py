@@ -4,8 +4,8 @@ from typing import cast
 
 from hydra.experimental import compose, initialize
 
-from ml_project.src import run
-from ml_project.src import Config
+from src.run_pipeline import run
+from src.schemas.schemas import Config
 
 
 def test_train_pipeline():

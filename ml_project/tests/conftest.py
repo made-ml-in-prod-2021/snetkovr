@@ -1,8 +1,8 @@
 import pytest
 import os
 
-from ml_project.tests.utils import create_fake_dataset
-from ml_project.src import GeneralConfig, ValidationConfig
+from tests.utils import create_fake_dataset
+from src.schemas.schemas import GeneralConfig, ValidationConfig
 
 
 @pytest.fixture()
