@@ -8,10 +8,10 @@ import pandas as pd
 from hydra.utils import get_original_cwd
 from omegaconf import DictConfig
 
-from src.data.make_dataset import read_data, split_train_val_data
-from src.features.build_features import (build_transformer, extract_target,
-                                     make_features, serialize_transformer)
-from src.models.train import evaluate_model, predict_model, train_model, serialize_model
+from data import read_data, split_train_val_data
+from features import (build_transformer, extract_target,
+                      make_features, serialize_transformer)
+from models.train import evaluate_model, predict_model, train_model, serialize_model
 
 logger = logging.getLogger(__name__)
 
@@ -89,7 +89,7 @@ def prepare_val_features_for_predict(
     return val_features
 
 
-@hydra.main(config_path='../configs', config_name='config')
+@hydra.main(config_path='ml_project/configs', config_name='config')
 def main(cfg: DictConfig):
     run(cfg)
 

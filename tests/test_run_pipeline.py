@@ -4,12 +4,12 @@ from typing import cast
 
 from hydra.experimental import compose, initialize
 
-from src.run_pipeline import run
-from src.schemas.schemas import Config
+from ml_project.src import run
+from ml_project.src import Config
 
 
 def test_train_pipeline():
-    with initialize(config_path="../configs", job_name="test_app"):
+    with initialize(config_path="../ml_project/configs", job_name="test_app"):
         config = compose(config_name="config")
         config = cast(Config, config)
         expected_model_path = config.general.models_path

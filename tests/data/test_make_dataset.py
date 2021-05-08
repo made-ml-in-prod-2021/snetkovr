@@ -1,6 +1,6 @@
 from math import ceil
 
-from src.data.make_dataset import split_train_val_data
+from data import split_train_val_data
 from tests.utils import create_fake_dataset
 
 

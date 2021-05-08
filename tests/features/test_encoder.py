@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-from src.features.encoder import MeanEncoder
+from features.encoder import MeanEncoder
 
 
 def test_mean_encoder():

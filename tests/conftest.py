@@ -1,13 +1,8 @@
 import pytest
 import os
-import pandas as pd
-import pickle
-from typing import List
 
 from tests.utils import create_fake_dataset
-from src.schemas.schemas import Config, GeneralConfig, ValidationConfig
-from hydra.experimental import compose, initialize
-from typing import cast
+from ml_project.src import GeneralConfig, ValidationConfig
 
 
 @pytest.fixture()
