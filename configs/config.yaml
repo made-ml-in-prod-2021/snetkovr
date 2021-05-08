@@ -1,10 +1,7 @@
 defaults:
   - model: rf
-  - cross_val: cross_val
+  - validation: validation
   - general: general
-  - data_path: "raw/heart.csv"
-#  - hydra/hydra_logging: colorlog
-#  - hydra/job_logging: colorlog
 
 
 hydra:

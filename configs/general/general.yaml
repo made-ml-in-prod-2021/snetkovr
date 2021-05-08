@@ -1,17 +1,10 @@
+# @package _group_
 random_state: 12
-categorical_features:
-  - "thal"
-  - "slope"
-  - "sex"
-  - "cp"
-  - "fbs"
-  - "restecg"
-  - "exang"
-  - "ca"
-numerical_features:
-  - "age"
-  - "trestbps"
-  - "chol"
-  - "thalach"
-  - "oldpeak"
+categorical_features: ["thal", "slope", "sex", "cp", "fbs", "restecg", "exang", "ca"]
+numerical_features: ["age", "trestbps", "chol", "thalach", "oldpeak"]
 target: "target"
+data_path: "data/raw/heart.csv"
+metric_path: "metrics/metrics.json"
+models_path:  "models/rf_test.pkl"
+transformer_path: "models/transformer.pkl"
+threshold: 0.6

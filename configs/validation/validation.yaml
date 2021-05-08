@@ -1,3 +1,2 @@
 # @package _group_
-scoring:
-cv:
+val_size: 0.1
