@@ -34,7 +34,9 @@ jobs:
           fi
       - name: Lint with pylint
         run: |
+          cd ml_project
           pylint --exit-zero src
       - name: Test with pytest
         run: |
+          cd ml_project
           python -m pytest --cov src/ tests/
