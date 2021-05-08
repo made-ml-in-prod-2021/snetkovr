@@ -1,0 +1,17 @@
+random_state: 12
+categorical_features:
+  - "thal"
+  - "slope"
+  - "sex"
+  - "cp"
+  - "fbs"
+  - "restecg"
+  - "exang"
+  - "ca"
+numerical_features:
+  - "age"
+  - "trestbps"
+  - "chol"
+  - "thalach"
+  - "oldpeak"
+target: "target"
