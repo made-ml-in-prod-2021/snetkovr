@@ -1,7 +1,7 @@
 from math import ceil
 
 from data import split_train_val_data
-from tests.utils import create_fake_dataset
+from ml_project.tests.utils import create_fake_dataset
 
 
 def test_split_train_val_data(validation_config):

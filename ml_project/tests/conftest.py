@@ -1,7 +1,7 @@
 import pytest
 import os
 
-from tests.utils import create_fake_dataset
+from ml_project.tests.utils import create_fake_dataset
 from ml_project.src import GeneralConfig, ValidationConfig
 
 
