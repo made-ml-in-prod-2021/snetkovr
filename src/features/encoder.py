@@ -10,7 +10,7 @@ class MeanEncoder(BaseEstimator, TransformerMixin):
     """
 
     def __init__(self, alpha: int = 20):
-        super(MeanEncoder, self).__init__()
+        super().__init__()
         self.alpha = alpha
         self.cols_values = dict()
         self.global_mean = None
