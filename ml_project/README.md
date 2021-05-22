@@ -8,7 +8,7 @@
 
 ## Обучение модели
 Запуск обучения: <br>
-`python src/run_pipeline.py --config_name {your_config}`
+`python -m src.run_pipeline`
 
 ## Датасет
 В проекте используется датасет [Heart Disease UCI](https://www.kaggle.com/ronitf/heart-disease-uci)

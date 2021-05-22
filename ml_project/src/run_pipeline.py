@@ -89,7 +89,7 @@ def prepare_val_features_for_predict(
     return val_features
 
 
-@hydra.main(config_path='ml_project/configs', config_name='config')
+@hydra.main(config_path='../configs', config_name='config')
 def main(cfg: DictConfig):
     run(cfg)
 
