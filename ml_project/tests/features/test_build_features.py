@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.compose import ColumnTransformer
 
 from src.features.build_features import build_transformer, extract_target, make_features
-from tests.utils import create_fake_dataset
+from tests.conftest import create_fake_dataset
 
 
 def test_build_transformer(general_config):
