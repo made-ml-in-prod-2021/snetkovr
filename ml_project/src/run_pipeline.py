@@ -11,7 +11,7 @@ from omegaconf import DictConfig
 from src.data.make_dataset import read_data, split_train_val_data
 from src.features.build_features import (build_transformer, extract_target,
                       make_features, serialize_transformer)
-from src.models.train import evaluate_model, predict_model, train_model, serialize_model
+from src.models.train_predict import evaluate_model, predict_model, train_model, serialize_model
 
 logger = logging.getLogger(__name__)
 

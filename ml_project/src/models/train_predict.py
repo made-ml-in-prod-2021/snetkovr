@@ -1,3 +1,4 @@
+import logging
 import joblib
 from typing import Dict, Union
 
@@ -18,6 +19,7 @@ def train_model(
 def predict_model(
     model, features: pd.DataFrame
 ) -> np.ndarray:
+    logging.info("Model predict")
     predicts = model.predict_proba(features)
     return predicts
 
@@ -25,6 +27,7 @@ def predict_model(
 def evaluate_model(
     proba: np.ndarray, target: pd.Series, threshold, digits=4
 ) -> Dict[str, float]:
+    logging.info("Metric calculation")
     predicts = proba[:, 1] > threshold
     return {
         "roc-auc": round(roc_auc_score(target, proba[:, 1]), digits),
@@ -35,6 +38,7 @@ def evaluate_model(
 
 
 def serialize_model(model, output: str) -> str:
+    logging.info(f"Save model into {output}")
     with open(output, "wb") as f:
         joblib.dump(model, f)
     return output

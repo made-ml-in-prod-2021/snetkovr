@@ -1,3 +1,5 @@
+import logging
+
 import joblib
 import numpy as np
 import pandas as pd
@@ -26,6 +28,7 @@ def build_numerical_pipeline() -> Pipeline:
 
 
 def make_features(transformer: ColumnTransformer, df: pd.DataFrame) -> pd.DataFrame:
+    logging.info(f"Transform dataframe with shape {df.shape}")
     return pd.DataFrame(transformer.transform(df))
 
 
@@ -48,11 +51,13 @@ def build_transformer(params) -> ColumnTransformer:
 
 
 def extract_target(df: pd.DataFrame, params) -> pd.Series:
+    logging.info(f"Extract target {params.target}")
     target = df[params.target]
     return target
 
 
 def serialize_transformer(transformer: ColumnTransformer, output: str) -> str:
+    logging.info(f"Save transformer into {output}")
     with open(output, "wb") as f:
         joblib.dump(transformer, f)
     return output
