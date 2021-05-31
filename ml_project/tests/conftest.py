@@ -6,17 +6,17 @@ import os
 from src.schemas.schemas import GeneralConfig, ValidationConfig
 
 
-@pytest.fixture()
+@pytest.fixture(scope='session')
 def src_path() -> str:
     return "src"
 
 
-@pytest.fixture()
+@pytest.fixture(scope='session')
 def tests_path() -> str:
     return "tests"
 
 
-@pytest.fixture()
+@pytest.fixture(scope='session')
 def dataset_path() -> str:
     path = os.path.join(os.path.dirname(__file__), "data_sample.zip")
     data = create_fake_dataset()
@@ -24,7 +24,7 @@ def dataset_path() -> str:
     return path
 
 
-@pytest.fixture()
+@pytest.fixture(scope='session')
 def general_config():
     return GeneralConfig(
         categorical_features=["thal", "slope", "sex", "cp", "fbs", "restecg", "exang", "ca"],
@@ -33,12 +33,12 @@ def general_config():
     )
 
 
-@pytest.fixture()
+@pytest.fixture(scope='session')
 def validation_config():
     return ValidationConfig(val_size=0.1)
 
 
-@pytest.fixture()
+@pytest.fixture(scope='session')
 def model_dir() -> str:
     return os.path.join(os.path.dirname(__file__), "model_test_dir")
 
