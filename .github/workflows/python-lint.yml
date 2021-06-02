@@ -27,10 +27,16 @@ jobs:
             ${{ runner.os }}-
       - name: Install dependencies
         run: |
+          cd ml_project
           python -m pip install --upgrade pip
           if [ -f requirements.txt ];
             then pip install -r requirements.txt;
           fi
       - name: Lint with pylint
         run: |
-          pylint src
+          cd ml_project
+          pylint --exit-zero src
+      - name: Test with pytest
+        run: |
+          cd ml_project
+          python -m pytest --cov src/ tests/

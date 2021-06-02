@@ -1,0 +1,12 @@
+defaults:
+  - model: rf
+  - validation: validation
+  - general: general
+
+
+hydra:
+  run:
+    dir: outputs/${now:%Y-%m-%d_%H-%M-%S}
+  sweep:
+    dir: outputs/${now:%Y-%m-%d_%H-%M-%S}
+    subdir: ${hydra.job.override_dirname}

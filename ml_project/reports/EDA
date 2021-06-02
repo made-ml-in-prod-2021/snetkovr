@@ -1,0 +1,137 @@
+target column - 'target'
+min value 29
+min value 77
+unique values 41
+58    19
+57    17
+54    16
+59    14
+52    13
+Name: age, dtype: int64
+raw roc auc 0.36190162494510314
+
+min value 0
+min value 1
+unique values 2
+1    207
+0     96
+Name: sex, dtype: int64
+raw roc auc 0.36877470355731223
+
+min value 0
+min value 3
+unique values 4
+0    143
+2     87
+1     50
+3     23
+Name: cp, dtype: int64
+raw roc auc 0.7486385595081247
+
+min value 94
+min value 200
+unique values 49
+120    37
+130    36
+140    32
+110    19
+150    17
+Name: trestbps, dtype: int64
+raw roc auc 0.4297101449275362
+
+min value 126
+min value 564
+unique values 152
+204    6
+197    6
+234    6
+269    5
+212    5
+Name: chol, dtype: int64
+raw roc auc 0.42992973210364516
+
+min value 0
+min value 1
+unique values 2
+0    258
+1     45
+Name: fbs, dtype: int64
+raw roc auc 0.48998682476943345
+
+min value 0
+min value 2
+unique values 3
+1    152
+0    147
+2      4
+Name: restecg, dtype: int64
+raw roc auc 0.5750768555116381
+
+min value 71
+min value 202
+unique values 91
+162    11
+163     9
+160     9
+152     8
+173     8
+Name: thalach, dtype: int64
+raw roc auc 0.7482652613087395
+
+min value 0
+min value 1
+unique values 2
+0    204
+1     99
+Name: exang, dtype: int64
+raw roc auc 0.29433465085639
+
+min value 0.0
+min value 6.2
+unique values 40
+0.0    99
+1.2    17
+1.0    14
+0.6    14
+0.8    13
+Name: oldpeak, dtype: int64
+raw roc auc 0.26007905138339926
+
+min value 0
+min value 2
+unique values 3
+2    142
+1    140
+0     21
+Name: slope, dtype: int64
+raw roc auc 0.6923583662714097
+
+min value 0
+min value 4
+unique values 5
+0    175
+1     65
+2     38
+3     20
+4      5
+Name: ca, dtype: int64
+raw roc auc 0.2634606938954765
+
+min value 0
+min value 3
+unique values 4
+2    166
+3    117
+1     18
+0      2
+Name: thal, dtype: int64
+raw roc auc 0.2938296003513394
+
+min value 0
+min value 1
+unique values 2
+1    165
+0    138
+Name: target, dtype: int64
+raw roc auc 1.0
+
